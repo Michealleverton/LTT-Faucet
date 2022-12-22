@@ -1,0 +1,159 @@
+body {
+  /* background: url("./images/bg-1.png") no-repeat; */
+  background-color: #070709;
+  color: white;
+}
+
+/* scrollbar appearance */
+
+::-webkit-scrollbar {
+  width: 1.25em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(49, 58, 70);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 119, 144);
+  border: .25em solid rgb(49, 58, 70);
+  border-radius: 100vw;
+}
+
+/* end of scrollbar appearance */
+
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+.mt-1 {
+  margin-top: 10px !important;
+}
+.mt-2 {
+  margin-top: 15px !important;
+}
+
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+.mb-2 {
+  margin-bottom: 15px !important;
+}
+
+.textblue {
+  color: #4f95ff;
+  font-weight: 600;
+}
+
+.title {
+  color: white;
+  margin-bottom: 1 rem;
+}
+
+.panel {
+  margin-top: 2em;
+}
+
+.panel-heading {
+  /* background-image: linear-gradient(to left,#38052F, #070709); */
+  border: 2px solid #b1bac6 !important;
+  border-bottom: 0px;
+  background-color: #00000048;
+  color: white;
+}
+
+.panel-block {
+  background: #fff;
+}
+
+.address-box {
+  padding: 3em;
+  border: 2.5px solid #b1bac67e !important;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0.4rem rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
+}
+
+.box .title {
+  color: #333;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar .navbar-item {
+  color: white;
+}
+
+.connect-wallet .button {
+  color: #E10859;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.connect-wallet:hover {
+  background-color: #e1e1e1 !important;
+}
+
+.container.main-content {
+  max-width: 1000px !important;
+}
+
+.faucet-hero-body {
+  margin-top: 100px;
+}
+
+.withdraw-error {
+  color: rgb(254, 125, 125);
+}
+
+.withdraw-success {
+  color: rgb(87, 224, 87);
+}
+
+.realfaucet {
+  position: absolute;
+  background: url('./images/faucet.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  left: 1260px;
+  top: 420px;
+}
+
+.background {
+  background:#132a47;
+}
+
+.bg_darkblue {
+  background-color: #012137;
+}
+
+.navshadow {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5) !important;
+}
