@@ -123,7 +123,7 @@ function App() {
           <div className="container has-text-centered main-content">
 
             <h1 className="title is-1">LTT Faucet</h1>
-            <p>Quick and Easy 2000 LTT Per Day</p>
+            <p>Limit Of 2000 LTT Every 24Hr</p>
             <div className="mt-5">
               {withdrawError && (
                 <div className="withdraw-error">{withdrawError}</div>
