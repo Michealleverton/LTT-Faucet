@@ -77,7 +77,7 @@ function App() {
     }
   };
 
-  const getOCTHandler = async () => {
+  const getLTTHandler = async () => {
     setWithdrawError("");
     setWithdrawSuccess("");
     try {
@@ -145,10 +145,10 @@ function App() {
                 <div className="column">
                   <button
                     className="button is-link is-normal"
-                    onClick={getOCTHandler}
+                    onClick={getLTTHandler}
                     disabled={walletAddress ? false : true}
                   >
-                    GET TOKENS
+                    REQUEST TOKENS
                   </button>
                 </div>
               </div>
