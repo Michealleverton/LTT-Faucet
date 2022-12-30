@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* background: url("./images/bg-1.png") no-repeat; */
   background-color: #070709;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 /* scrollbar appearance */
@@ -110,6 +116,12 @@ body {
   color: white;
 }
 
+.nav_controller {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+}
+
 .connect-wallet .button {
   color: #E10859;
   font-size: 16px;
@@ -147,6 +159,8 @@ body {
 }
 
 .background {
+  position: relative;
+  width: 100%;
   background:#132a47;
 }
 
@@ -156,4 +170,75 @@ body {
 
 .navshadow {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Nav bar */
+
+.mynavbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #012137;
+  color: white;
+  font-size: 24px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+@media(max-width: 1024px) {
+  .mynavbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #012137;
+    color: white;
+    font-size: 24px;
+    padding-top: 5px;
+  }
+}
+
+@media(max-width: 768px) {
+  .mynavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #012137;
+    color: white;
+    font-size: 24px;
+    padding-top: 5px;
+  }
+}
+
+@media(max-width: 425px) {
+  .mynavbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #012137;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 375px) {
+  .mynavbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #012137;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+.brand-title {
+  color: white;
+}
+
+.navbar-button {
+
 }

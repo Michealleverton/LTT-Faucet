@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { ethers } from "ethers";
 import faucetContract from "./ethereum/faucet";
+import Mynav from './Mynav'
 // import Drip from './Drip'
 
 function App() {
@@ -92,31 +93,8 @@ function App() {
 
   return (
     <div className="background">
-      <nav className="navbar bg_darkblue navshadow">
-        <div className="container">
-          <div className="navbar-brand">
-            <h1 className="navbar-item is-size-4 fw-600">Levy Test Token (LTT)</h1>
-          </div>
-          <div id="navbarMenu" className="navbar-menu">
-            <div className="navbar-end is-align-items-center">
-              <button
-                className="button is-link is-normal mt-2 mb-2"
-                onClick={connectWallet}
-              >
-                <span className="is-link">
-                  {walletAddress && walletAddress.length > 0
-                    ? `Connected: ${walletAddress.substring(
-                      0,
-                      6
-                    )}...${walletAddress.substring(38)}`
-                    : "Connect Wallet"}
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-      
+      <Mynav />
+
       <section className="hero is-fullheight">
         <div className="faucet-hero-body">
           {/* <div className="realfaucet"></div> */}
@@ -161,10 +139,10 @@ function App() {
                       : "... Awaiting Request For LTT"}
                   </p>
                 </div>
-              </article>    
+              </article>
             </div>
           </div>
-      {/* <Drip /> */}
+          {/* <Drip /> */}
         </div>
       </section>
     </div>
