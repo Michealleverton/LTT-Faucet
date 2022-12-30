@@ -18,28 +18,6 @@ function App() {
     addWalletListener();
   }, [walletAddress]);
 
-  const connectWallet = async () => {
-    if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
-      try {
-        /* get provider */
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        /* get accounts */
-        const accounts = await provider.send("eth_requestAccounts", []);
-        /* get signer */
-        setSigner(provider.getSigner());
-        /* local contract instance */
-        setFcContract(faucetContract(provider));
-        /* set active wallet address */
-        setWalletAddress(accounts[0]);
-      } catch (err) {
-        console.error(err.message);
-      }
-    } else {
-      /* MetaMask is not installed */
-      console.log("Please install MetaMask");
-    }
-  };
-
   const getCurrentWalletConnected = async () => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
       try {
