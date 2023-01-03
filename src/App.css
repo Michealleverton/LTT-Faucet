@@ -94,6 +94,7 @@ body {
 
 .panel-block {
   background: #fff;
+  overflow: hidden;
 }
 
 .address-box {
@@ -239,6 +240,7 @@ body {
   color: white;
 }
 
-.navbar-button {
-
+.transdatalook {
+  display: flex;
+  flex-wrap: wrap;
 }
